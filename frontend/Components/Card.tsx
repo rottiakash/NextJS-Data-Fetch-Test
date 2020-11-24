@@ -1,11 +1,11 @@
 import { FunctionComponent } from "react";
 
-interface CardProps {
+export interface Student {
   name: string;
   usn: string;
 }
 
-const Card: FunctionComponent<CardProps> = ({ name, usn }) => {
+const Card: FunctionComponent<Student> = ({ name, usn }) => {
   return (
     <section
       style={{

@@ -1,7 +1,13 @@
-import Card from "../Components/Card";
-const axios = require("axios").default;
+import Card, { Student } from "../Components/Card";
+import * as a from "axios";
+import { FunctionComponent } from "react";
+const axios = a.default;
 
-const Students = ({ data }) => {
+interface StudentsProps {
+  data: Array<Student>;
+}
+
+const Students: FunctionComponent<StudentsProps> = ({ data }) => {
   return (
     <div
       style={{
